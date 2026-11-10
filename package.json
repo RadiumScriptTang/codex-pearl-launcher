@@ -1,0 +1,17 @@
+{
+  "name": "codex-pearl-launcher",
+  "version": "0.2.0-alpha.1",
+  "private": true,
+  "description": "Windows and Apple Silicon macOS cinematic launcher with a smooth handoff to Codex",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "check": "node scripts/check.cjs",
+    "test": "node scripts/smoke.cjs",
+    "preview": "node scripts/preview.cjs",
+    "start": "node launcher.cjs"
+  }
+}

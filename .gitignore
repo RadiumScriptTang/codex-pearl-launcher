@@ -1,0 +1,14 @@
+.git/
+vendor/
+node_modules/
+runtime/
+launch-browser-profile/
+preview-browser-profile/
+intro.html
+*.lnk
+*.log
+启动日志.txt
+验证-*.json
+skin-v1/live-status.json
+skin-v1/*-live.png
+.env*
