@@ -1,6 +1,6 @@
 {
   "name": "codex-pearl-launcher",
-  "version": "0.2.0-alpha.1",
+  "version": "0.2.0-alpha.2",
   "private": true,
   "description": "Windows and Apple Silicon macOS cinematic launcher with a smooth handoff to Codex",
   "license": "MIT",

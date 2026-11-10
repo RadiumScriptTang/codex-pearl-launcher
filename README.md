@@ -6,16 +6,26 @@
 
 ## 一键安装
 
-- **Windows x64**：解压 Windows 发行包，双击根目录 `Install Windows.cmd`。安装到当前用户 AppData，创建名为 **Codex** 的桌面快捷方式。
-- **macOS Apple Silicon（M 系列）**：解压 Mac 发行包，双击 `Install macOS.command`。安装到 `~/Applications/Codex Pearl.app`，桌面也会生成入口；将这个 App 拖到 Dock。
+- **Windows x64**：先「全部解压」Windows 发行包，双击 `01 一键部署 Codex（Windows）.cmd`。安装到当前用户 AppData，完成后双击桌面的 **Codex** 快捷方式。
+- **macOS Apple Silicon（M 系列）**：先完整解压 Mac 发行包，双击 `01 一键部署 Codex（macOS）.command`，在终端等待安装完成。若没有在终端打开，可右键选择「打开方式 → 终端」。完成后双击桌面的 **Codex Pearl.app**，也可在 Finder 中前往 `~/Applications` 打开它，再拖到 Dock。
+
+两个平台的安装包顶层都只有三项，部署入口排在第一项：
+
+```text
+01 一键部署 Codex（对应平台）.cmd / .command
+02 使用说明.txt
+程序文件/
+```
+
+代码、素材、原始语音、混音、运行时及本机修复提示词均收进「程序文件」。请保留整个解压目录，安装前不要单独移走部署入口。源码包顶层只有「01 源码说明.txt」与「程序文件」，不含运行时；一键安装请下载对应平台安装包。
 
 发行包自带 Node.js，不必额外安装开发工具。安装完成不自动启动或重启 Codex。原始 Codex 保留。
 
-Mac 首版为预发布，尚未实机验收；未签名、未 notarize，首次打开由用户按系统提示确认。项目不关闭 Gatekeeper，不移除隔离属性。具体测试范围见 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
+Mac 首版为预发布，已有「安装后点击无反应」反馈，尚未确认根因或修复；本次只调整发行包结构和说明。应用未签名、未 notarize，首次打开由用户按系统提示确认。项目不关闭 Gatekeeper，不移除隔离属性。具体测试范围见 [RELEASE_NOTES.md](RELEASE_NOTES.md)。
 
 ## 安装后没反应或需要适配
 
-在发生问题的电脑上，用 Codex 打开解压后的项目文件夹，复制 [本机修复与适配提示词](docs/REPAIR_PROMPT.zh-CN.md)，让它直接读取启动代码与本机日志、修复并验证。无需跨电脑搬运日志。
+在发生问题的电脑上，用 Codex 打开解压目录内的「程序文件」文件夹，复制其中的 [本机修复与适配提示词](docs/REPAIR_PROMPT.zh-CN.md)，让它直接读取启动代码与本机日志、修复并验证。直接克隆仓库时，打开仓库根目录即可。无需跨电脑搬运日志。
 
 该文档包含项目入口、各平台排查路径和真实验收要求；模拟测试通过不等于原生界面通过。它是排障兜底，当前 Mac 启动失败问题尚未确认根因或修复。
 

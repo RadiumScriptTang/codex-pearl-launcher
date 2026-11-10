@@ -6,8 +6,8 @@
 
 ## 怎么用
 
-1. 从 [Release](https://github.com/RadiumScriptTang/codex-pearl-launcher/releases/tag/v0.2.0-alpha.1) 下载对应平台的完整安装包并解压。保留解压后的整个文件夹；仅下载 GitHub 的 Source code 不含运行时。
-2. 在出问题的电脑上，用 Codex 打开解压后的 `codex-pearl-launcher` 文件夹作为项目。
+1. 从 [Release](https://github.com/RadiumScriptTang/codex-pearl-launcher/releases) 下载对应平台的完整安装包并解压。保留解压后的整个文件夹；仅下载 GitHub 的 Source code 不含运行时。
+2. 在出问题的电脑上，用 Codex 打开解压目录内的「程序文件」文件夹作为项目；旧版 alpha.1 包则打开 `codex-pearl-launcher` 文件夹。直接克隆仓库时打开仓库根目录。
 3. 把下面整段提示词粘进新聊天。可以在末尾补一句实际现象，例如「安装成功，桌面 App 双击后没有任何反应」。
 4. 让它在本机完成排查与修复。需要重新打开当前 Codex 时，由你手动操作。
 
