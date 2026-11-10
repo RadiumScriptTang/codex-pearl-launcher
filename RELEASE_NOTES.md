@@ -17,3 +17,7 @@ Mac 应用未签名、未 notarize；首次打开按系统提示由用户确认�
 
 请对照 SHA256SUMS.txt 检查下载文件。素材权利范围见 ASSETS.md。
 
+## 本机排障入口（文档补充）
+
+安装后点击无反应或系统更新后不兼容时，可在出问题的电脑上用 Codex 打开解压后的项目，复制 [本机修复与适配提示词](https://github.com/RadiumScriptTang/codex-pearl-launcher/blob/main/docs/REPAIR_PROMPT.zh-CN.md) 直接排查。
+这是文档补充；本 Release 的安装包未替换，尚不包含已确认的 Mac 启动修复。
